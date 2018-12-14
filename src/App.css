@@ -1,0 +1,105 @@
+.Post textarea, .Post input {
+  padding: 10px;
+  margin: 20px;
+  border-radius: 4px; }
+
+.Post .someText, .Post .searchTag {
+  margin: 20px;
+  background-color: #4682B4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.Post .save, .Post .tagButton {
+  background: #bdc3c7;
+  font-size: 1rem;
+  border-radius: 1rem;
+  padding: 1rem; }
+
+.Post .listBox .notes, .Post .containerNote .tags {
+  border: 1px solid silver;
+  border-radius: 5px;
+  background-color: peachpuff; }
+
+.Post .listBox, .Post .containerNote {
+  color: black;
+  font-size: 14px;
+  font-family: Georgia, Times, serif;
+  margin-right: 35px;
+  flex-wrap: wrap; }
+
+body {
+  background-color: #fffded;
+  font-family: sans-serif,serif; }
+
+.container {
+  justify-content: center;
+  margin: 0 auto;
+  background-color: white;
+  max-width: 1000px;
+  min-height: 900px; }
+
+.App {
+  padding: 30px;
+  text-align: center; }
+
+.Post .someText {
+  display: flex;
+  flex-wrap: wrap; }
+
+.Post textarea {
+  flex-basis: 80%;
+  overflow: scroll; }
+
+.Post .save {
+  margin-top: 20px;
+  height: 50px;
+  flex-basis: 10%; }
+
+.Post .searchTag {
+  flex-basis: 70%;
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.Post .tagButton {
+  flex-direction: column;
+  justify-content: center;
+  max-height: 30px;
+  margin: 1rem 20px 0px 0px;
+  color: black; }
+
+.Post .listBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-position: inside;
+  list-style-type: upper-roman; }
+  .Post .listBox .notes {
+    margin: 20px;
+    padding: 20px; }
+    .Post .listBox .notes .someNote {
+      flex-grow: 1; }
+    .Post .listBox .notes .delNote {
+      margin: 40px 10px 0px 10px;
+      border-radius: 10px;
+      background-color: #C71585; }
+    .Post .listBox .notes .changeNote {
+      margin: 40px 10px 0px 10px;
+      border-radius: 10px;
+      background-color: #20B2AA; }
+
+.Post .containerNote {
+  display: inline-flex;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: wrap; }
+  .Post .containerNote .tags {
+    padding: 10px;
+    margin: 3px; }
+  .Post .containerNote .delTag {
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #1E90FF; }
+
+@media only screen and (max-width: 700px) {
+  .container {
+    background-color: #a3ddf0; } }
